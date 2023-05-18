@@ -6,10 +6,22 @@
     */
 
     //ENTRADA
-
+    let num1 = Number (prompt(`Informe um numero`));
+    let num2 = Number (prompt(`Informe outro numero`)); 
     //PROCESSAMENTO
+    if (num1==num2){
+        alert ("Informe dois numeros diferentes")
+    }
+    else {
+    const num3 = num1 
+    num1 = num2
+    num2 = num3 
 
     //SAÍDA
+    alert (`O numero ${num1} virou o numero ${num2}`)
+    alert (`O numero ${num2} virou o numero ${num1}`)
+    }
 
     
+        
 </script>
