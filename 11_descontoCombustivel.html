@@ -14,9 +14,36 @@
     */
 
     //ENTRADA
+const combust = (prompt("Informe o tipo de combustivél A-ácool , G-gasolina:"));
+const litro = Number(prompt(`Quantos litros voce deseja:`));
+let descont = 0
+let preco = 0
 
+if(combust == "A"){
+    if(litro <= 20 ){
+        descont = 0.3
+    }
+    if(litro >20 ){
+        descont = 0.5
+    }
+    let preco = 6.10
 
-    //PROCESSAMENTO
+    let resultado = preco * litro * descont
+}
+if(combust == "G"){
+    if(litro <= 20 ){
+        descont = 0.4
+    }
+    if(litro >20){
+        descont = 0.6
+    }
+    let preco = 6.50
+
+    let resultado = preco * litro * descont
+    alert(`O valor a ser pago será ${resultado} reais.`)
+    
+}
+
 
     
     //SAÍDA

@@ -6,9 +6,38 @@
     */
 
     //ENTRADA
-
+const hemis = prompt("Em qual hemisfério ela está? N(norte) ou S(sul)").toLocaleUpperCase();
+const mes = prompt("Qual o mês atual?");
 
     //PROCESSAMENTO
+if(hemis == "S"){
+    if (mes==3 || mes== 03 || mes== 01 || mes== 1 || mes== 2 ||mes== 02){
+            alert(`A estação é Verão`)
+        }
+        else if (mes== 4 || mes== 04 || mes== 05 || mes== 5 || mes== 6 ||mes== 06){
+            alert(`A estação é Outono`)
+        }
+        else if (mes== 7 || mes== 07 || mes== 08 || mes== 8 || mes== 9 ||mes== 09){
+            alert(`A estação é Inverno`)
+        }
+        else if (mes== 10 || mes== 11 || mes== 12){
+            alert(`A estação é Primaveira`)
+        }
+    }
+    else if (hemis =="N") {
+        if (mes== 3 || mes== 03 || mes== 01 || mes== 1 || mes== 2 ||mes== 02){
+            alert(`A estação é Inverno`)
+        }
+        else if (mes== 4 || mes== 04 || mes== 05 || mes== 5 || mes== 6 ||mes== 06){
+            alert(`A estação é Primavera`)
+        }
+        else if (mes== 7 || mes== 07 || mes== 08 || mes== 8 || mes== 9 ||mes== 9){
+            alert(`A estação é Verão`)
+        }
+        else if (mes== 10 || mes== 11 || mes== 12){
+            alert(`A estação é Outono`)
+        }
+    }
 
     
     //SAÍDA

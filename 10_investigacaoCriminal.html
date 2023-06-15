@@ -11,11 +11,39 @@
     */
 
     //ENTRADA
-     const tell = (prompt("Telefonou para a vitima?")).trim().toUpperCase
-     const local = (prompt("Esteve no local do crime?")).trim().toUpperCase
-     const moraPerto = (prompt("Esteve no local do crime?")).trim().toUpperCase
-     const devia = (prompt("Devia para a vítima?")).trim().toUpperCase
-     const trabalhou = (prompt("Já trabalhou com a vítima?")).trim().toUpperCase
+     const tell = (prompt("Telefonou para a vitima S ou N?")).trim().toUpperCase
+     const local = (prompt("Esteve no local do crime S ou N?")).trim().toUpperCase
+     const moraPerto = (prompt("Esteve no local do crime S ou N?")).trim().toUpperCase
+     const devia = (prompt("Devia para a vítima S ou N?")).trim().toUpperCase
+     const trabalhou = (prompt("Já trabalhou com a vítima S ou N?")).trim().toUpperCase
     
-    
+     let resp = 0 
+
+    if (tell == "s") {
+        resp == resp++
+    }
+    if (local == "s") {
+        resp == resp++;
+    }
+    if (moraPerto == "s") {
+        resp == resp++;
+    }
+    if (devia == "s") {
+        resp== resp++; 
+    }
+    if (trabalhou == "s") {
+        resp == resp++;
+    }
+    if (resp == 2) {
+        alert(`Voce é suspeito!`);
+    }
+    else if (resp == 3 || resp == 4) {
+        alert(`Voce é cúmplice!`);
+    }
+    else if (resp == 5) {
+        alert(`Voce é assasino!`);
+    }
+    else {
+        alert(`Voce é inocente!`);
+    }
 </script>

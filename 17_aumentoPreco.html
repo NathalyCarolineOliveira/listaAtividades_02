@@ -7,11 +7,29 @@
         //- acima de 1500: aumento de 5 %
     
     // Entrada
-
+const produto = Number(prompt(`Informe o preço do produto:`))
+let preco = 0
     
     // Processamento
-
-    
+    if(preco <= 280){
+        let preco = (produto * 0.20) + produto
+        alert(`Valor produto: ${preco}`)
+    }
+    else if(preco >280 && preco >=700){
+        let preco = (produto * 0.15) + produto
+        alert(`Valor produto: ${preco}`)
+    }
+    else if (preco > 700 && preco <= 1500){
+        let preco = (produto * 0.10) + produto
+        alert(`Valor produto: ${preco}`)
+    }
+    else if(preco > 1500){
+        let preco = (produto * 0.05) + produto
+        alert(`Valor produto: ${preco}`)
+    }
+    else{
+        alert("Resposta invalida!");
+    }
     // Saída
 
 </script>
