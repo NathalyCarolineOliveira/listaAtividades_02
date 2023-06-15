@@ -5,11 +5,18 @@
     */
 
     //ENTRADA
-
+    let num = Number(prompt(`Informe um numero inteiro`));
     
     //PROCESSAMENTO
-    
-    
+    if (isNaN(num)) {
+        alert (`Voce não informou um número`)
+    }
+    else if (num % 2 === 0 || num % 2 === -0) {
+        alert (`Par`)
+    }
+    else if (num % 2 === 1 || num % 2 === -1) {
+        alert (`Impar`)
+    }
     //SAÍDA
     
     
